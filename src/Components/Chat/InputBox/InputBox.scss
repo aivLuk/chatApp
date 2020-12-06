@@ -1,0 +1,39 @@
+.inputBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-top: 1px solid #56e4c4;
+    border-right: 1px solid #56e4c4;
+
+    .inputBoxContainer {
+    width: 98%;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .inputBoxField {
+        width: 94%;
+        height: 6vh;
+        border: none;
+        background-color: rgb(238, 238, 238);
+        outline: none;
+        border-radius: 12px;
+        padding-left: 10px;
+    }
+
+    span.send {
+        color: #1cad8d;
+        font-size: 6vh;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    span.send:hover {
+        opacity: 0.8;
+    }
+}
+}
+

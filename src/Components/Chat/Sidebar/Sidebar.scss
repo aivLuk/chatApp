@@ -1,0 +1,95 @@
+.sidebar {
+    width: 200px;
+    height: 95vh;
+    background-color: white;
+    display: inline-block;
+    float: right;
+
+    .chatList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 100%;
+
+        span {
+            cursor: pointer;
+            margin-bottom: 10px;
+            width: 90%;
+            border: 2px solid #56e4c4;
+            border-radius: 12px;
+            box-sizing: border-box;
+        }
+
+        span:hover {
+            color: #56e4c4;
+        }
+
+        .activeClass {
+            color: white;
+            background-color:  #56e4c4;
+        }
+
+        .activeClass:hover {
+            color: white;
+        }
+
+        .newChatInput {
+            outline: none;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        .newChatInput::placeholder {
+            color: rgb(201, 201, 201);
+        }
+
+        .newChatActions {
+            display: flex;
+            justify-content: space-between;
+
+            .cancelNewChat {
+                font-size: 12px;
+                cursor: pointer;
+                color: rgb(255, 131, 131);
+                margin-top: 5px;
+            }
+
+            .submitNewChat {
+                font-size: 12px;
+                cursor: pointer;
+                color: #56e4c4;
+                margin-top: 5px;
+            }
+        }
+
+        .userExistsErr {
+            font-size: 12px;
+            color: rgb(255, 131, 131);
+        }
+    }
+}
+
+ @media(max-width: 500px) {
+        .sidebar {
+            transition: transform 1s ease;
+            transform: translateX(200px);
+        }
+        .openSidebar {
+            transition: transform 1s ease;
+            transform: translateX(0);
+            position: absolute;
+            top: 5vh;
+            right: 0;
+            z-index: 50;
+        }
+        .closeSidebar {
+            transition: transform 1s ease;
+            transform: translateX(200px);
+            position: absolute;
+            top: 5vh;
+            right: 0;
+            z-index: 50;
+        }
+    }

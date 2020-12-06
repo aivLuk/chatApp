@@ -1,0 +1,32 @@
+.inputContainer {
+    width: 300px;
+    margin-bottom: 20px;
+
+    input {
+        width: 100%;
+        height: 40px;
+        box-sizing: border-box;
+        outline: none;
+        border: 2px solid #56e4c4;
+        border-radius: 4px;
+    }
+
+    input:focus {
+        background-color: #f7f7f7;
+    }
+
+    input::placeholder {
+        text-transform: uppercase;
+        color: rgb(201, 201, 201);
+    }
+
+    .inputErr {
+        border: 2px solid rgb(255, 131, 131);
+    }
+
+    label {
+        color: red;
+        float: left;
+        font-size: 12px;
+    }
+}

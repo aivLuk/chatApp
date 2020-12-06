@@ -1,0 +1,12 @@
+.chatContainer {
+    width: calc(100% - 200px);
+    height: 95vh;
+    display: inline-block;
+    float: left;
+}
+
+@media(max-width: 500px) {
+        .chatContainer {
+            width: 100%;
+        }
+    }
